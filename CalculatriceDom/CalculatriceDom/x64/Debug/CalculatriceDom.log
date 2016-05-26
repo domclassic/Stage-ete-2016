@@ -1,0 +1,21 @@
+﻿Build started 2016-05-26 15:43:46.
+     1>Project "G:\Users\dompi\Desktop\ProjetC++\CalculatriceDom\CalculatriceDom\CalculatriceDom.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Moc'ing calculatricedom.h...
+       ClCompile:
+         G:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /IG:\Qt\Qt5.6.0\5.6\msvc2015_64\include /I.\GeneratedFiles\Debug /IG:\Qt\Qt5.6.0\5.6\msvc2015_64\include\QtCore /IG:\Qt\Qt5.6.0\5.6\msvc2015_64\include\QtGui /IG:\Qt\Qt5.6.0\5.6\msvc2015_64\include\QtWidgets /IG:\Qt\Qt5.6.0\5.6\msvc2015_64\include\QtScript /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /D QT_SCRIPT_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\Debug\moc_calculatricedom.cpp calculatricedom.cpp main.cpp
+         moc_calculatricedom.cpp
+         calculatricedom.cpp
+         main.cpp
+         Generating Code...
+       Link:
+         G:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"G:\Users\dompi\Desktop\ProjetC++\CalculatriceDom\x64\Debug\\CalculatriceDom.exe" /NOLOGO /LIBPATH:G:\Qt\Qt5.6.0\5.6\msvc2015_64\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Widgetsd.lib Qt5Scriptd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"G:\Users\dompi\Desktop\ProjetC++\CalculatriceDom\x64\Debug\CalculatriceDom.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\Users\dompi\Desktop\ProjetC++\CalculatriceDom\x64\Debug\CalculatriceDom.lib" /MACHINE:X64 x64\Debug\calculatricedom.obj
+         x64\Debug\moc_calculatricedom.obj
+         x64\Debug\qrc_calculatricedom.obj
+         x64\Debug\main.obj
+         CalculatriceDom.vcxproj -> G:\Users\dompi\Desktop\ProjetC++\CalculatriceDom\x64\Debug\CalculatriceDom.exe
+     1>Done Building Project "G:\Users\dompi\Desktop\ProjetC++\CalculatriceDom\CalculatriceDom\CalculatriceDom.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.20
