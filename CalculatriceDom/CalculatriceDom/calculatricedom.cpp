@@ -1,59 +1,75 @@
 #include "calculatricedom.h"
 #include <QtCore/QCoreApplication>
 
-QString value{""}, total{ "" };
-int num1, num2;
-bool addBool = false, sousBool = false, multBool = false, diviBool = false;
+
 CalculatriceDom::CalculatriceDom(QWidget *parent)
 	: QMainWindow(parent)
 {
+	//grid layout
+	grille = new QGridLayout;
+
+
+
 	//output
-	label = new QLabel("0", this);
-	label->setGeometry(QRect(QPoint(10, 10), QSize(200, 100)));
+	/*label = new QLabel("0", this);
+	grille->addWidget(label, 0, 0, 3, 1);*/
+	//label->setGeometry(QRect(QPoint(10, 10), QSize(200, 100)));
+	
 
 	//bouttons digit
 	un_button = new QPushButton("1", this);
-	un_button->setGeometry(QRect(QPoint(10, 200), QSize(50, 50)));
+	//un_button->setGeometry(QRect(QPoint(10, 200), QSize(50, 50)));
+	grille->addWidget(un_button, 0, 0);
 	connect(un_button, SIGNAL(released()), this, SLOT(un()));
 
+
 	deux_button = new QPushButton("2", this);
-	deux_button->setGeometry(QRect(QPoint(60, 200), QSize(50, 50)));
+	//deux_button->setGeometry(QRect(QPoint(60, 200), QSize(50, 50)));
+	grille->addWidget(un_button, 0, 1);
 	connect(deux_button, SIGNAL(released()), this, SLOT(deux()));
 
-	trois_button = new QPushButton("3", this);
-	trois_button->setGeometry(QRect(QPoint(110, 200), QSize(50, 50)));
+	/*trois_button = new QPushButton("3", this);
+	//trois_button->setGeometry(QRect(QPoint(110, 200), QSize(50, 50)));
+	grille->addWidget(un_button, 2, 1);
 	connect(trois_button, SIGNAL(released()), this, SLOT(trois()));
 
 	quatre_button = new QPushButton("4", this);
-	quatre_button->setGeometry(QRect(QPoint(10, 150), QSize(50, 50)));
+	//quatre_button->setGeometry(QRect(QPoint(10, 150), QSize(50, 50)));
+	grille->addWidget(un_button, 0, 2);
 	connect(quatre_button, SIGNAL(released()), this, SLOT(quatre()));
 
 	cinq_button = new QPushButton("5", this);
-	cinq_button->setGeometry(QRect(QPoint(60, 150), QSize(50, 50)));
+	//cinq_button->setGeometry(QRect(QPoint(60, 150), QSize(50, 50)));
+	grille->addWidget(un_button, 1, 2);
 	connect(cinq_button, SIGNAL(released()), this, SLOT(cinq()));
 
 	six_button = new QPushButton("6", this);
-	six_button->setGeometry(QRect(QPoint(110, 150), QSize(50, 50)));
+	//six_button->setGeometry(QRect(QPoint(110, 150), QSize(50, 50)));
+	grille->addWidget(un_button, 2, 2);
 	connect(six_button, SIGNAL(released()), this, SLOT(six()));
 
 	sept_button = new QPushButton("7", this);
-	sept_button->setGeometry(QRect(QPoint(10, 100), QSize(50, 50)));
+	//sept_button->setGeometry(QRect(QPoint(10, 100), QSize(50, 50)));
+	grille->addWidget(sept_button, 0, 1);
 	connect(sept_button, SIGNAL(released()), this, SLOT(sept()));
 
 	huit_button = new QPushButton("8", this);
-	huit_button->setGeometry(QRect(QPoint(60, 100), QSize(50, 50)));
+	//huit_button->setGeometry(QRect(QPoint(60, 100), QSize(50, 50)));
+	grille->addWidget(un_button, 1, 1);
 	connect(huit_button, SIGNAL(released()), this, SLOT(huit()));
 
 	neuf_button = new QPushButton("9", this);
-	neuf_button->setGeometry(QRect(QPoint(110, 100), QSize(50, 50)));
+	//neuf_button->setGeometry(QRect(QPoint(110, 100), QSize(50, 50)));
+	grille->addWidget(un_button, 2, 1);
 	connect(neuf_button, SIGNAL(released()), this, SLOT(neuf()));
 
 	zero_button = new QPushButton("0", this);
-	zero_button->setGeometry(QRect(QPoint(10, 250), QSize(50, 50)));
-	connect(zero_button, SIGNAL(released()), this, SLOT(zero()));
+	//zero_button->setGeometry(QRect(QPoint(10, 250), QSize(50, 50)));
+	grille->addWidget(un_button, 1, 4);
+	connect(zero_button, SIGNAL(released()), this, SLOT(zero()));*/
 
 	//bouttons op.
-	add_button = new QPushButton("+", this);
+	/*add_button = new QPushButton("+", this);
 	add_button->setGeometry(QRect(QPoint(160, 100), QSize(50, 50)));
 	connect(add_button, SIGNAL(released()), this, SLOT(add()));
 
@@ -75,11 +91,11 @@ CalculatriceDom::CalculatriceDom(QWidget *parent)
 
 	clear_button = new QPushButton("C", this);
 	clear_button->setGeometry(QRect(QPoint(60, 250), QSize(50, 50)));
-	connect(clear_button, SIGNAL(released()), this, SLOT(clear()));
+	connect(clear_button, SIGNAL(released()), this, SLOT(clear()));*/
 
 
 
-
+	//unWidget->setLayout(grille);
 
 
 }
