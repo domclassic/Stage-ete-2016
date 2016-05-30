@@ -38,8 +38,10 @@ private:
 	QString value{ "" }, total{ "" };
 	int num1, num2;
 	bool addBool = false, sousBool = false, multBool = false, diviBool = false;
-	//QWidget *unWidget;
+	enum class operation { None, Addi, Sous, Mult, Divi };
+	operation op;
 	QGridLayout *grille;
+	QVBoxLayout *bLayout;
 	QLabel *label;
 	QPushButton *add_button;
 	QPushButton *sous_button;
