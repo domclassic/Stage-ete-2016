@@ -5,6 +5,7 @@
 #include "ui_calculatricedom.h"
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QLabel>
+#include <QTWidgets>
 
 
 class CalculatriceDom : public QMainWindow
@@ -34,6 +35,11 @@ private slots:
 	void clear();
 
 private:
+	QString value{ "" }, total{ "" };
+	int num1, num2;
+	bool addBool = false, sousBool = false, multBool = false, diviBool = false;
+	//QWidget *unWidget;
+	QGridLayout *grille;
 	QLabel *label;
 	QPushButton *add_button;
 	QPushButton *sous_button;
