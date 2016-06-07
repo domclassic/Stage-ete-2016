@@ -1,0 +1,19 @@
+﻿Build started 2016-06-06 21:52:29.
+     1>Project "G:\Users\dompi\Desktop\ProjetC++\Controller\Controller\Controller.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         G:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /IG:\Qt\Qt5.6.0\5.6\msvc2015_64\include /I.\GeneratedFiles\Debug /IG:\Qt\Qt5.6.0\5.6\msvc2015_64\include\QtCore /IG:\Qt\Qt5.6.0\5.6\msvc2015_64\include\QtGui /IG:\Qt\Qt5.6.0\5.6\msvc2015_64\include\QtWidgets /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt QRangeFocusController.cpp
+         QRangeFocusController.cpp
+     1>g:\users\dompi\desktop\projetc++\controller\controller\qrangefocuscontroller.cpp(46): warning C4715: 'QRangeFocusController::findOptimalFocus': not all control paths return a value
+       Link:
+         G:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"G:\Users\dompi\Desktop\ProjetC++\Controller\x64\Debug\\Controller.exe" /NOLOGO /LIBPATH:G:\Qt\Qt5.6.0\5.6\msvc2015_64\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Widgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"G:\Users\dompi\Desktop\ProjetC++\Controller\x64\Debug\Controller.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\Users\dompi\Desktop\ProjetC++\Controller\x64\Debug\Controller.lib" /MACHINE:X64 x64\Debug\moc_QRangeFocusController.obj
+         x64\Debug\qrc_controller.obj
+         x64\Debug\main.obj
+         x64\Debug\DummyRF.obj
+         x64\Debug\DummyFocus.obj
+         x64\Debug\QRangeFocusController.obj
+         Controller.vcxproj -> G:\Users\dompi\Desktop\ProjetC++\Controller\x64\Debug\Controller.exe
+     1>Done Building Project "G:\Users\dompi\Desktop\ProjetC++\Controller\Controller\Controller.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.68
